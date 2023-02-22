@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+</head>
+    <style>
+        .box {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        button {
+
+            width:40%;
+            flex-basis: 40px;
+            padding: 10px 30px;
+            color: white;
+            border: 0px red solid ;
+            border-radius: 10px;
+            margin: 4px;
+            transition: all 0.2s ease-in;
+        }
+
+        .lbtn {
+            transform: perspective(500px) rotateY(45deg);
+            background:linear-gradient(to right,orange, rgb(243, 86, 38),tomato);
+            text-align: left;
+            
+        }
+        .rbtn {
+            background:linear-gradient(to left,orange, rgb(243, 86, 38),tomato);
+            transform: perspective(500px) rotateY(-45deg);
+            text-align: right;
+            
+        }
+
+        .lbtn:hover {
+            transform: perspective(250px) rotateY(45deg);
+           
+        }
+        
+        .rbtn:hover {
+            transform: perspective(250px) rotateY(-45deg);
+            
+        
+        }
+
+    </style>
+
+<body>
+    <div class="box">
+        <button class="lbtn">Home</button>
+        <button class="rbtn">Products</button>
+        <button class="lbtn" >Services</button>
+        <button class="rbtn">Contact</button>
+    </div>
+    
+
+</body>
+</html>
