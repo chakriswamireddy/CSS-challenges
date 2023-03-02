@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    background: rgb(185, 222, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.checkbox {
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.checkbox > label {
+    background: rgb(174, 82, 235);
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    left: 105px;
+    top:-5px;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.circle {
+    content: "";
+    height: 22px;
+    width: 22px;
+    top: -1px;
+    left: 110px;
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.period {
+    padding: 0px 30px;
+}
+input {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: -10px;
+    left: -20px;
+    opacity: 0;
+    
+}
+
+input:checked ~ .circle {
+    transform: rotate(0deg) translate(30px);
+}
+
+/* upto now we completed upper part, now we have to do cards */
+
+.cards {
+    display: flex;
+    align-items: center;
+    background-color:  rgb(185, 222, 245);
+    font-weight: lighter;
+}
+
+.card {
+    padding: 60px 70px;
+    border: 0px solid black;
+    box-shadow: 1p 1px 10px black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: smaller;
+    font-weight: light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#card2 {
+    background:linear-gradient(to right,  rgb(174, 82, 235), rgb(194, 159, 218), rgb(174, 82, 235));
+    border-radius: 10px;
+    padding: 80px 70px;
+}
+
+.card > p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.card > h3 {
+    font-weight: 400;
+}
+
+.card > h3:nth-child(1) {
+    font-weight: bold;
+}
+
+.card * {
+    margin: 4px;
+}
+
+button {
+    padding:10px 20px;
+    background:rgb(174, 82, 235);
+    border: 0px;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#card2 > button {
+    background: white;
+}
+p {
+    padding: 20px;
+}
